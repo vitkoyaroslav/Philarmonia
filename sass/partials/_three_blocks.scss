@@ -1,0 +1,64 @@
+
+.three_blocks {
+		margin: 112px 0 0 0;
+  	width: 100%;
+		display: flex;
+	  position: relative;
+	  overflow: hidden;
+	  flex-wrap: wrap;
+	  flex-direction:row;
+	  justify-content: space-between;
+	  align-items: flex-end;
+	  li{
+			display:  inline-block;
+		  position: relative;
+		  overflow: hidden;
+			h4{
+				display: block;
+				overflow: hidden;
+				position: relative;
+				width: 408px;
+				@include common_block_h;
+				color: $second_button_color;
+				font-size: 30px;
+				margin-bottom: 36px;
+			}
+			img{
+				display: block;
+				overflow: hidden;
+				position: relative;
+				margin: 0 auto 0;
+				width: 408px;
+				height: 232px;
+
+			}
+	}
+	}
+
+
+@media (min-width: 768px) and (max-width: 1365px) {
+	.three_blocks {
+			margin: 10px 0 0 0;
+			justify-content: space-around;
+			li{
+			 h4{
+				 text-align: center;
+				 margin-top: 20px;
+			 }
+		 }
+		}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.three_blocks {
+			margin: 0;
+			justify-content: space-around;
+			li{
+			 h4{
+				 text-align: center;
+				 margin-top: 20px;
+				 width: 300px;
+			 }
+		 }
+		}
+}

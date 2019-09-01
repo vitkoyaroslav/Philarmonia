@@ -1,0 +1,24 @@
+.four_social_icons{
+		 margin: 54px auto;
+		 width: 274px;
+		 display: flex;
+		 position: relative;
+		 overflow: hidden;
+		 flex-wrap: wrap;
+		 flex-direction:row;
+		 justify-content: space-between;
+		 align-items: center;
+		 li{
+			 display:  inline-block;
+			 position: relative;
+			 overflow: hidden;
+			 width: 54px;
+			 height: 54px;
+		 }
+	 }
+
+@media (min-width: 768px) and (max-width: 1365px) {
+	.four_social_icons{
+			 margin: 30px auto;
+		 }
+}

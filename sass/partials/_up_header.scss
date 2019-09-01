@@ -1,0 +1,169 @@
+.up_header{
+	display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+	height: 196px;
+	ul {
+		margin: 26px 0 0 0;
+  	width: 100%;
+		display: flex;
+	  position: relative;
+	  overflow: hidden;
+	  flex-wrap: wrap;
+	  flex-direction:row;
+	  justify-content: space-between;
+	  align-items: flex-start;
+		vertical-align: top;
+	  li{
+			display:  inline-block;
+		  position: relative;
+		  overflow: hidden;
+			vertical-align: top;
+			a{
+				img{
+					display: block;
+					overflow: hidden;
+					position: relative;
+					margin: 0 auto 0;
+					vertical-align: top;
+				}
+			}
+			.shopcart{
+				display: block;
+				position: relative;
+				overflow: hidden;
+				margin-bottom: 26px;
+				.a_shopcart{
+					display: block;
+					position: relative;
+					overflow: hidden;
+					float: right;
+					@include common_block_h;
+					font-size: 22px;
+					line-height: 17px;
+					margin-bottom: 0;
+					color: #b6b8ba;
+				}
+			}
+			.social_icons{
+				display: flex;
+			  position: relative;
+			  overflow: hidden;
+				flex-wrap: wrap;
+				flex-direction:row;
+				justify-content: space-between;
+				text-align: center;
+
+				margin: 0 0 26px 0;
+				width: 130px;
+			 li{
+					 display: inline-block;
+					 position: relative;
+					 overflow: hidden;
+					 a{
+							display: inline-block;
+							position: relative;
+							overflow: hidden;
+						}
+				 }
+			 }
+			.donate{
+				display: block;
+				position: relative;
+				overflow: hidden;
+				float: right;
+				@include common_block_h;
+				font-size: 24px;
+				line-height: 17px;
+				margin-bottom: 0;
+				color: #f36f21;
+			}
+	}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+	.up_header{
+	  width: 100%;
+		height: auto;
+		ul {
+			margin: 26px 0 0 0;
+			width: 100%;
+			height: auto;
+		  li{
+				margin-bottom: 20px;
+				.shopcart{
+					display: block;
+					float: left;
+					margin-bottom: 10px;
+					margin-right: 50px;
+					.a_shopcart{
+						margin-bottom: 0;
+					}
+				}
+				.social_icons{
+					display: block;
+					float: left;
+					width: 119px;
+					margin-top: 0;
+					margin-bottom: 0;
+				 }
+				.donate{
+					display: block;
+					float: left;
+					margin-bottom: 0;
+				}
+			}
+			.li_shopcart{
+				width: 200px;
+			}
+		}
+	}
+}
+@media (min-width: 320px) and (max-width: 767px) {
+	.up_header{
+	  width: 310px;
+		height: 340px;
+		ul {
+			margin-top: 10px;
+			margin-left: 10px;
+	  	width: 300px;
+		  li{
+				margin-top: 20px;
+				width: 44%;
+				.shopcart{
+					display: inline-block;
+					float: left;
+					margin-bottom: 10px;
+					margin-right: 108px;
+					.a_shopcart{
+						margin-bottom: 0;
+					}
+				}
+				.social_icons{
+					display: flex;
+				  position: relative;
+				  overflow: hidden;
+					flex-wrap: nowrap;
+					flex-direction:row;
+					float: left;
+					justify-content: space-between;
+					align-items: flex-start;
+					width: 119px;
+					margin-top: 0;
+					margin-bottom: 0;
+				 }
+				.donate{
+					display: block;
+					float: left;
+					margin-top: 10px;
+					margin-bottom: 0;
+				}
+			}
+			.li_shopcart{
+				width: 100%;
+			}
+		}
+	}
+}

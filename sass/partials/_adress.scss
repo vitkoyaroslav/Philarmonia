@@ -1,0 +1,76 @@
+.adress{
+	display:  block;
+	position: relative;
+	overflow: hidden;
+	a{
+		display:  block;
+		position: relative;
+		overflow: hidden;
+		margin-top: 70px;
+		text-align: center;
+	}
+	h6{
+		display:  block;
+		position: relative;
+		overflow: hidden;
+		margin-top: 40px;
+		font-family: "Helvetica";
+		font-weight: 700;
+		color: #ffffff;
+		text-align: center;
+		font-size: 20px;
+		text-transform: uppercase;
+		margin-bottom: 12px;
+		font-stretch: ultra-condensed;
+
+	}
+	p{
+		display:  block;
+		position: relative;
+		overflow: hidden;
+		font-family: "Helvetica";
+		font-weight: 300;
+		color: #ffffff;
+		text-align: center;
+		font-size: 20px;
+		margin-bottom: 12px;
+		font-stretch: ultra-condensed;
+	}
+	span{
+		display:  block;
+		position: relative;
+		overflow: hidden;
+		font-family: "Helvetica";
+		font-weight: 400;
+		color: #ffffff;
+		text-align: center;
+		font-size: 20px;
+		margin-bottom: 12px;
+		font-stretch: ultra-condensed;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+	.adress{
+		a{
+			margin-top: 30px;
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.adress{
+		a{
+			margin-top: 20px;
+		}
+		h6{
+			font-size: 16px;
+		}
+		p{
+			font-size: 14px;
+		}
+		span{
+		font-size: 14px;
+		}
+	}
+}

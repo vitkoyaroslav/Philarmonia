@@ -1,0 +1,88 @@
+.subscribe{
+	display: block;
+  position: relative;
+  overflow: hidden;
+	margin-top: 150px;
+	width: 100%;
+	h2{
+	 display: block;
+	 position: relative;
+	 overflow: hidden;
+	 width: 100%;
+	 margin-bottom: 40px;
+	 margin-left: auto;
+ 	margin-right: auto;
+	text-align: center;
+	@include common_block_h;
+	color: $second_button_color;
+	font-size: 34px;
+	margin-bottom: 38px;
+ }
+ .two_buttons{
+		 margin: 0 auto;
+		 width: 312px;
+		 display: flex;
+		 position: relative;
+		 overflow: hidden;
+		 flex-wrap: wrap;
+		 flex-direction:row;
+		 justify-content: space-between;
+		 align-items: center;
+		 li{
+			 display:  inline-block;
+			 position: relative;
+			 overflow: hidden;
+			 width: 152px;
+			 height: 40px;
+			 a{
+				 display: table-cell;
+				 position: relative;
+				 overflow: hidden;
+				 width: 152px;
+				 height: 38px;
+				 background: #ffffff;
+					text-align: center;
+					@include common_block_h;
+						border: 1px solid #b6b8ba;
+					color: #b6b8ba;
+
+					font-size: 18px;
+					vertical-align: middle;
+			 }
+			 .sign{
+				 color: #f36f21;
+			 }
+		 }
+	 }
+}
+
+
+@media (min-width: 768px) and (max-width: 1365px) {
+	.subscribe{
+		margin-top: 40px;
+		h2{
+			margin-bottom: 20px;
+	 }
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.subscribe{
+		margin-top: 30px;
+		h2{
+			margin-bottom: 20px;
+	 }
+	 .two_buttons{
+			 margin: 0 auto;
+			 width: 280px;
+			 li{
+				 width: 130px;
+				 height: 32px;
+				 a{
+					 width: 128px;
+					 height: 28px;
+				 }
+			 }
+		 }
+	}
+}
